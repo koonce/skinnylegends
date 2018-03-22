@@ -13,10 +13,14 @@ public class CubeDestroyer : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+
+	}
+
+	private void FixedUpdate()
+	{
 		counter++;
 		if (counter > 50)
 		{
 			Destroy(gameObject);
-		}
-	}
+		}	}
 }

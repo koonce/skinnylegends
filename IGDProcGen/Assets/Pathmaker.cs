@@ -16,7 +16,8 @@ public class Pathmaker : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update ()
+
+	private void FixedUpdate()
 	{
 		if(counter < 50)
 		{
@@ -52,4 +53,11 @@ public class Pathmaker : MonoBehaviour {
 		counter++;
 
 	}
+		void Update ()
+{
+
+
 }
+	}
+
+
