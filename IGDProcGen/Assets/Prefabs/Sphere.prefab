@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33659170270601824}
   - component: {fileID: 135676714623428300}
   - component: {fileID: 23652124210231472}
+  - component: {fileID: 114094545782781038}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1976897049210844}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114094545782781038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1976897049210844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e0399c1f9445c4a9cfe9f4144b831e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorPrefab: {fileID: 4576556259148094, guid: 8fd2cc38db996154b9fa99f4cdc9d33b,
+    type: 2}
+  pathmakerSpherePrefab: {fileID: 4556340150491100}
 --- !u!135 &135676714623428300
 SphereCollider:
   m_ObjectHideFlags: 1

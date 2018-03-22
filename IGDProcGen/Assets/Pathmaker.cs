@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.WSA;
 using Random = UnityEngine.Random;
 
 public class Pathmaker : MonoBehaviour {
@@ -15,26 +16,32 @@ public class Pathmaker : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		if(counter < 50)
 		{
-			float ran = Random.Range(0, 1);
+			float ran = Random.Range(0, 1f);
 			if (ran < .25f)
 			{
-				transform.Rotate(0,90,0);
+				transform.Rotate(0,45,0);
+				
+				Debug.Log("rotating");
 			}else if (ran < .5 && ran > .25)
 			{
-				transform.Rotate(0, -90, 0);
+				transform.Rotate(0, 45, 0);
 			}else if (ran >= .99f && ran <= 1.00f)
 			{
-				Instantiate(pathmakerSpherePrefab, transform);
+				Instantiate(pathmakerSpherePrefab, transform.position,Quaternion.identity, null);
 			}
-
-			transform.forward = new Vector3(0,0,5);
+			Debug.Log("forward");
+			transform.Translate(transform.forward );
+			Instantiate(floorPrefab, transform.position + Vector3.down, Quaternion.identity, null);
 		}
 		else
 		{
-			Destroy(gameObject);
+			Destroy(this.gameObject);
 		}
+		counter++;
+
 	}
 }

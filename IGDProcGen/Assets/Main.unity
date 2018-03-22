@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8591927, g: 0.5671743, b: 0.5673617, a: 1}
+  m_IndirectSpecularColor: {r: 0.85919774, g: 0.5671755, b: 0.56736404, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -113,6 +113,26 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &176685576 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1976897049210844, guid: 521e053bc91598a4883b2307d51b79e6,
+    type: 2}
+  m_PrefabInternal: {fileID: 467261410}
+--- !u!114 &176685577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176685576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e0399c1f9445c4a9cfe9f4144b831e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorPrefab: {fileID: 4576556259148094, guid: 8fd2cc38db996154b9fa99f4cdc9d33b,
+    type: 2}
+  pathmakerSpherePrefab: {fileID: 4556340150491100, guid: 521e053bc91598a4883b2307d51b79e6,
+    type: 2}
 --- !u!1 &375861287
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +211,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4556340150491100, guid: 521e053bc91598a4883b2307d51b79e6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 4556340150491100, guid: 521e053bc91598a4883b2307d51b79e6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -466,10 +486,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1214133937}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.4327638, y: -0, z: -0, w: 0.9015074}
+  m_LocalPosition: {x: 0, y: 15.28, z: -12.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 51.286003, y: 0, z: 0}
