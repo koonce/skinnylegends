@@ -29,17 +29,25 @@ public class Pathmaker : MonoBehaviour {
 			}else if (ran < .5 && ran > .25)
 			{
 				transform.Rotate(0, 45, 0);
+			}else if (ran >=.5f && ran<=.75f)
+			{
+				transform.Rotate(0, 0, 45);
+			}else if (ran > .75f && ran < .98f)
+			{
+				transform.Rotate(0,0,-45);
 			}else if (ran >= .99f && ran <= 1.00f)
 			{
 				Instantiate(pathmakerSpherePrefab, transform.position,Quaternion.identity, null);
 			}
 			Debug.Log("forward");
+
 			transform.Translate(transform.forward );
-			Instantiate(floorPrefab, transform.position + Vector3.down, Quaternion.identity, null);
+			Instantiate(floorPrefab, transform.position - (transform.up*2), Quaternion.identity, null);
 		}
 		else
 		{
 			Destroy(this.gameObject);
+			
 		}
 		counter++;
 
